@@ -26,7 +26,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 
         }
-        System.out.println("user name "+applicationUser.getUsername());
         return new User(applicationUser.getUsername(), applicationUser.getPassword(), emptyList());
 
     }
